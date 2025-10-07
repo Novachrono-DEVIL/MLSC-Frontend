@@ -204,7 +204,7 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="mt-8 text-center">
+          {/* <div className="mt-8 text-center">
             <p className="text-gray-500 text-sm italic">
               "With great power comes great responsibility... to code." 🕷️
             </p>
@@ -218,7 +218,7 @@ const Footer = () => {
             >
               Register Now - Deadline Oct 8
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
 
