@@ -122,7 +122,7 @@ const HeroSection = () => {
         </p>
 
         {/* Countdown Timer */}
-        <div
+        {/* <div
           ref={countdownRef}
           className="mb-10"
         >
@@ -157,7 +157,7 @@ const HeroSection = () => {
           <p className="text-sm text-gray-400 mt-4 font-semibold text-center">
             Time Until Event Launch
           </p>
-        </div>
+        </div> */}
 
         {/* Action Button */}
         <a
@@ -172,10 +172,6 @@ const HeroSection = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-red-700 via-red-600 to-red-700 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-center duration-500"></div>
         </a>
 
-        {/* Registration Info */}
-        <p className="text-red-400 font-bold text-sm md:text-base text-center">
-          Registration Closes: October 8, 2025
-        </p>
       </div>
 
       {/* Embedded CSS for animations */}

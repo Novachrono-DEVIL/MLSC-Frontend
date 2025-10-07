@@ -5,9 +5,7 @@ import { Shield, Users, Trophy, Calendar, Zap } from 'lucide-react';
 
 // Import hover images
 import hulk from '../assets/download.jpeg';
-// import thor from '../assets/thor.png';
-// import ironman from '../assets/ironman.png';
-import captainamerica from '../assets/Capitán América.jpeg';
+
 // import spiderman from '../assets/spiderman.png';
 import doctor from '../assets/doctor.jpg'
 import volverin from '../assets/volverine.jpeg';
@@ -28,6 +26,7 @@ const AboutSection = () => {
     { icon: Zap, title: 'GEN AI', color: 'from-cyan-600 to-cyan-800', description: 'Command infinite resources. Build scalable cloud-native applications.',hoverImage:arc },
     { icon: Shield, title: 'AI/ML', color: 'from-green-600 to-green-800', description: 'Create invulnerable software. Develop applications with a security-first approach.',hoverImage:doctor },
     { icon: Shield, title: 'AGENTIC AI', color: 'from-green-600 to-green-800', description: 'Create invulnerable software. Develop applications with a security-first approach.',hoverImage:volverin }
+    
   ];
 
   useEffect(() => {

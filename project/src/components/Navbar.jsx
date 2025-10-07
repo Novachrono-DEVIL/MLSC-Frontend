@@ -57,17 +57,6 @@ const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-              <a
-                href="#register"
-                className="relative px-6 py-2 bg-red-600 text-white font-bold uppercase tracking-wider rounded-md overflow-hidden group"
-                style={{
-                  boxShadow: '0 0 20px rgba(220,38,38,0.6)',
-                  animation: 'pulse 2s infinite'
-                }}
-              >
-                <span className="relative z-10">Register</span>
-                <div className="absolute inset-0 bg-red-700 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
-              </a>
             </div>
           </div>
 
