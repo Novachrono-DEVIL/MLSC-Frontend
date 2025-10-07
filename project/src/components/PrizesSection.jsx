@@ -249,25 +249,6 @@ const PrizesSection = () => {
             })}
           </div>
         </div>
-
-        <div className="text-center">
-          <div className="inline-block bg-gradient-to-r from-red-950/50 to-black/50 backdrop-blur-sm border-2 border-red-500 rounded-lg p-8"
-            style={{ boxShadow: '0 0 40px rgba(220,38,38,0.3)' }}
-          >
-            <Trophy className="w-12 h-12 text-red-500 mx-auto mb-4" />
-            <p className="text-2xl font-black text-white mb-3 uppercase">Ready to Claim Glory?</p>
-            <p className="text-gray-400 mb-6 max-w-2xl">
-              Join INNOVERGENCE XXV and compete for amazing prizes, internship opportunities with top companies, and recognition in the tech community.
-            </p>
-            <a
-              href="#register"
-              className="inline-block px-8 py-4 bg-red-600 text-white text-lg font-black uppercase tracking-wider rounded-lg hover:bg-red-700 transition-all duration-300"
-              style={{ boxShadow: '0 0 30px rgba(220,38,38,0.6)' }}
-            >
-              Register Your Team
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );

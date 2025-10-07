@@ -279,24 +279,6 @@ const TimelineSection = () => {
             })}
           </div>
         </div>
-
-        <div className="mt-16 text-center">
-          <div className="inline-block bg-gradient-to-r from-red-950/50 to-black/50 backdrop-blur-sm border-2 border-red-500 rounded-lg p-6"
-            style={{ boxShadow: '0 0 30px rgba(220,38,38,0.3)' }}
-          >
-            <p className="text-xl font-black text-white mb-2 uppercase">Critical Deadline</p>
-            <p className="text-red-400 text-lg font-semibold">
-              Register before October 8, 2025 - Don't miss out!
-            </p>
-            <a
-              href="#register"
-              className="inline-block mt-4 px-8 py-3 bg-red-600 text-white font-bold uppercase tracking-wider rounded-lg hover:bg-red-700 transition-colors"
-              style={{ boxShadow: '0 0 20px rgba(220,38,38,0.6)' }}
-            >
-              Register Now
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );
