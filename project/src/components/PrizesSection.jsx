@@ -110,19 +110,25 @@ const PrizesSection = () => {
   }, []);
 
   return (
-    <section id="prizes" ref={sectionRef} className="relative py-20 bg-black overflow-hidden">
+    <section
+      id="prizes"
+      ref={sectionRef}
+      className="relative py-20 min-h-screen bg-black overflow-hidden"
+    >
+      {/* Background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 opacity-20"
+        <div
+          className="absolute inset-0 opacity-30"
           style={{
             backgroundImage: 'url("https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1920")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            backgroundAttachment: 'fixed'
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black"></div>
       </div>
 
+      {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2
           className="prizes-title text-5xl md:text-7xl font-black text-center mb-4"
@@ -141,21 +147,17 @@ const PrizesSection = () => {
           Claim the rewards worthy of heroes
         </p>
 
+        {/* Prizes */}
         <div className="prizes-container grid md:grid-cols-3 gap-8 mb-20">
           {prizes.map((prize, index) => (
-            <div
-              key={index}
-              className="prize-card group relative"
-            >
+            <div key={index} className="prize-card group relative">
               <div
                 className={`relative bg-gradient-to-br ${prize.gradient} rounded-lg p-8 transform hover:scale-105 transition-all duration-500 cursor-pointer overflow-hidden`}
                 style={{
                   boxShadow: `0 0 40px ${prize.glow}, 0 20px 60px rgba(0,0,0,0.8)`,
                 }}
               >
-                <div className="absolute top-0 right-0 text-9xl opacity-10 font-black"
-                  style={{ textShadow: '0 0 30px rgba(255,255,255,0.5)' }}
-                >
+                <div className="absolute top-0 right-0 text-9xl opacity-10 font-black">
                   {prize.icon}
                 </div>
 
@@ -167,25 +169,25 @@ const PrizesSection = () => {
                       </span>
                     </div>
 
-                    <h3 className="text-3xl font-black text-white mb-2 uppercase tracking-wider"
-                      style={{ textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}
-                    >
+                    <h3 className="text-3xl font-black text-white mb-2 uppercase tracking-wider">
                       {prize.artifact}
                     </h3>
                   </div>
 
                   <div className="space-y-4 text-center">
                     <div className="bg-black/30 backdrop-blur-sm rounded-lg p-4 border-2 border-white/20">
-                      <p className="text-sm text-white/80 font-semibold uppercase mb-2">Cash Prize</p>
-                      <p className="text-4xl font-black text-white"
-                        style={{ textShadow: '0 0 20px rgba(255,255,255,0.5)' }}
-                      >
+                      <p className="text-sm text-white/80 font-semibold uppercase mb-2">
+                        Cash Prize
+                      </p>
+                      <p className="text-4xl font-black text-white">
                         {prize.prize}
                       </p>
                     </div>
 
                     <div className="bg-black/30 backdrop-blur-sm rounded-lg p-4 border-2 border-white/20">
-                      <p className="text-sm text-white/80 font-semibold uppercase mb-2">Internship</p>
+                      <p className="text-sm text-white/80 font-semibold uppercase mb-2">
+                        Internship
+                      </p>
                       <p className="text-lg font-black text-white leading-tight">
                         {prize.internship}
                       </p>
@@ -193,15 +195,18 @@ const PrizesSection = () => {
                   </div>
                 </div>
 
-                <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                <div
+                  className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                   style={{
-                    background: 'radial-gradient(circle at center, rgba(255,255,255,0.2) 0%, transparent 70%)'
+                    background:
+                      'radial-gradient(circle at center, rgba(255,255,255,0.2) 0%, transparent 70%)'
                   }}
                 ></div>
               </div>
 
               {prize.rank === 1 && (
-                <div className="absolute -top-4 -right-4 bg-red-600 text-white px-4 py-2 rounded-full font-black text-sm uppercase transform rotate-12"
+                <div
+                  className="absolute -top-4 -right-4 bg-red-600 text-white px-4 py-2 rounded-full font-black text-sm uppercase transform rotate-12"
                   style={{ boxShadow: '0 0 20px rgba(220,38,38,0.8)' }}
                 >
                   Winner!
@@ -211,8 +216,11 @@ const PrizesSection = () => {
           ))}
         </div>
 
+        {/* Special Awards */}
+                {/* Special Awards */}
         <div className="special-awards">
-          <h3 className="text-3xl md:text-4xl font-black text-center mb-12 text-white uppercase"
+          <h3
+            className="text-3xl md:text-4xl font-black text-center mb-12 text-white uppercase"
             style={{ textShadow: '0 0 15px rgba(220,38,38,0.6)' }}
           >
             Special Recognition Awards
@@ -227,7 +235,9 @@ const PrizesSection = () => {
                   className="special-award group relative bg-gradient-to-br from-black/80 to-red-950/30 backdrop-blur-sm border-2 border-red-900/50 rounded-lg p-6 hover:border-red-500 transition-all duration-300"
                   style={{ boxShadow: '0 0 20px rgba(220,38,38,0.2)' }}
                 >
-                  <div className={`absolute inset-0 bg-gradient-to-br ${award.color} opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-lg`}></div>
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-br ${award.color} opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-lg`}
+                  ></div>
 
                   <div className="relative z-10">
                     <div className="flex justify-center mb-4">
@@ -249,6 +259,15 @@ const PrizesSection = () => {
             })}
           </div>
         </div>
+
+        {/* 👇 ADD YOUR EXTRA SECTION BELOW HERE */}
+        <div className="mt-20 text-center text-white">
+          <h3 className="text-2xl font-bold mb-4">Bonus Rewards</h3>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            Additional surprises await! Stay tuned for mystery giveaways and exclusive sponsor perks.
+          </p>
+        </div>
+
       </div>
     </section>
   );
